@@ -1,6 +1,6 @@
 
 print("Py Dictionary")
-level = input ("What do you want to do understand? (General Terms) ")
+level = input ("What do you want to do understand? (general Terms) ")
 level = level.lower()
 
 
@@ -19,11 +19,6 @@ def gen_terms():
     else:
         term = input("")
         help(term)
-
 if level == "general term" or "general terms":
     gen_terms()
-    choice = input("Do you want to keep researching in general terms? ")
-    if choice == "yes" or "yea" or "ya":
-        gen_terms()
-    else:
-        print("Bye!")
+    
