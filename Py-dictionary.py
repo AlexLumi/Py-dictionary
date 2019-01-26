@@ -5,6 +5,7 @@ level = level.lower()
 
 
 def beginner():
+    knowledge
     learn = input ("Hello " + level + " what do you want to learn today?")
     learn = learn.strip()
     learn = learn.lower()
@@ -19,4 +20,3 @@ if level == "beginner" or "novice" or "potato":
         beginner()
     else:
         print("Bye!")
-
