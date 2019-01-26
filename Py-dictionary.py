@@ -1,16 +1,10 @@
-print("Py Dictionary")
-print(" ")
-level = input ("What do you want to do understand or do? (General Terms, Strings): ")
-level = level.lower()
-
-
 def gen_terms():
-    knowledge = input("Press Enter")
-    check = True
+    knowledge = input("Do you want to see the table of contents?(Highly Suggested): ")
+    knowledge = knowledge.lower()
     gen_terms =  ["abs","argument","argparse","assert","assignment","block","break","class","compiler","continue","if","else","elif",
                     "def","dictionary","distutils","__future__", "easy_install","exceptions","filter","float","for","if","import","int","lambda","list","map"
                     "object", "pass","reduce","set","setuptools","slice","str","string","try","tuple","while","with","yield"]
-    if check:
+    if knowledge == "yes" or "yea":
         print (gen_terms)
         print (" ")
         print ("Cool! Hello, what do you want to learn today?")
@@ -18,7 +12,9 @@ def gen_terms():
         term = help(term)
         print (term)
         if term not in gen_terms:
-            print("You might want to see the table of contents again because what you chose is not in the list")
+            print("You might want to get the table of contents because what you chose is not in the list")
+#--------------------------------------------------------------------------------------------------------------
+
 def strings():
     knowledge = input("Do you want to see the table of contents? (Highly Suggested): ")
     knowledge = knowledge.lower()
@@ -48,9 +44,15 @@ def strings():
         if choose in string_dict:
             print(" ")
             print ( choose + ": "  + string_dict.get(choose))
-if level == "general term" or "general terms":
+#----------------------------------------------------
+
+print("Py Dictionary")
+print(" ")
+print ("What do you want to do understand or do? (General Terms, Strings): ")
+level = input()
+level = level.lower()
+
+if str(level) == "general term":
     gen_terms()
-    
-elif level =="strings" or "string":
+if str(level) == "strings":
     strings()
-    
