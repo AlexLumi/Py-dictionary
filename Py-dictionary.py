@@ -19,6 +19,6 @@ def gen_terms():
     else:
         term = input("")
         help(term)
-if level == "general term" or "general terms":
+if level == "general term" or "general terms" or "General terms":
     gen_terms()
     
