@@ -113,7 +113,7 @@ def exerises():
                 x = x + 1
     num = num + 1
     if int(num) == 6:
-        print ("Congrats! You completed all the exercises.") 
+        print ("Congrats! You completed all the exercises.")
                 
 
 #----------------------------- Beginning ------------------------------------------------------------
