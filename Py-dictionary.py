@@ -64,8 +64,8 @@ def everything():
 				messagebox.showinfo("Strings", choose + ": "  + string_dict.get(choose))
 
 	#---------------------------------------------------------------------------------------------------
-	def exerises():
-		print ("There are 5 exerises for you to test your skills.")
+	def exercises():
+		print ("There are 5 exercises for you to test your skills.")
 		input ("Press Enter")
 		print (" ")
 		num = 1
@@ -131,7 +131,7 @@ def everything():
 					x = x + 1
 		num = num + 1
 		if int(num) == 6:
-			messagebox.showinfo("Exerises","Congrats! You completed all the exercises.")
+			messagebox.showinfo("Exercises","Congrats! You completed all the exercises.")
 					
 
 	#----------------------------- Beginning ------------------------------------------------------------
@@ -145,7 +145,7 @@ def everything():
 		gen_terms()
 	if str(level) == "strings":
 		strings()
-	if str(level) == "exerises":
-		exerises()
+	if str(level) == "exercises":
+		exercises()
 
 everything()
