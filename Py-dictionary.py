@@ -29,7 +29,7 @@ def strings():
                     "max":"Returns the max alphabetical character from the string str",
                     "min": "Returns the min alphabetical character from the string str",
                     "title": "Returns 'titlecased' version of string, that is, all words begin with uppercase and the rest are lowercase ",
-                    "upper": "Converts lowercase letters in string to uppercase"}
+                    "upper": "Converts lowercase letters in string to uppercase"} 
 
     if knowledge == "yes" or "yea":
         string_list = []
