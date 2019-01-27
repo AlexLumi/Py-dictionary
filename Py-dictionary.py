@@ -26,7 +26,7 @@ def strings():
                     "len": "Returns the length of the string",
                     "lower": "Converts all uppercase letters in string to lowercase",
                     "strip": "Removes space on the left and right of the sting",
-                    "max":"Retruns the max alphabetical character from the string str",
+                    "max":"Returns the max alphabetical character from the string str",
                     "min": "Returns the min alphabetical character from the string str",
                     "title": "Returns 'titlecased' version of string, that is, all words begin with uppercase and the rest are lowercase ",
                     "upper": "Converts lowercase letters in string to uppercase"}
@@ -44,15 +44,89 @@ def strings():
         if choose in string_dict:
             print(" ")
             print ( choose + ": "  + string_dict.get(choose))
-#----------------------------------------------------
+
+#---------------------------------------------------------------------------------------------------
+def exerises():
+    print ("There are 5 exerises for you to test your skills.")
+    input ("Press Enter")
+    print (" ")
+    num = input("If you don't mind me asking? What excerises were you on if you are returning: ")
+    if int(num) == 1:
+        print ("Insert the missing part of the code needed to output 'Hello World': ")
+        x = 0
+        while x < 10:
+            answer = input()
+            if str(answer) == "print":
+                print ("Correct")
+                x = 10
+            else:
+                print("Try Again")
+                x = x + 1
+    num = int(num) + 1
+    if int(num) == 2:
+        print("Comments in Python are written with a special character, which one? ")
+        x = 0
+        while x < 10:
+            answer = input()
+            if str(answer) == "#":
+                print ("Correct")
+                x = 10
+            else:
+                print ("Try Again")
+                x = x + 1
+    num = num + 1
+    if int(num) == 3:
+        print ("Create a variable named x and assign the value 50 to it. ")
+        x = 0
+        while x < 10:
+            answer = input()
+            if str(answer) == "x = 50" or "x=50":
+                print ("Correct")
+                x = 10
+            else:
+                print ("Try Again")
+                x = x + 1
+    num = num + 1
+    if int(num) == 4:
+        print ("Use the 'len' method to print the length of the string. (x = 'Hello World') ")
+        x = 0
+        while x < 10:
+            answer = input()
+            if str(answer) == "print(len(x))" or "print (len(x))":
+                print ("Correct")
+                x = 10
+            else:
+                print ("Try Again")
+                x = x + 1
+    num = num + 1
+    if int(num) == 5:
+        print ("Convert the value of 'txt' to upper case. (txt = 'Hello World') ")
+        print ("txt = ____________")
+        x = 0
+        while x < 10:
+            answer = input()
+            if str(answer) == "txt.upper()":
+                print ("Correct")
+                x = 10
+            else:
+                print ("Try Again")
+                x = x + 1
+    num = num + 1
+    if int(num) == 6:
+        print ("Congrats! You completed all the exercises.")
+                
+
+#----------------------------- Beginning ------------------------------------------------------------
 
 print("Py Dictionary")
 print(" ")
-print ("What do you want to do understand or do? (General Terms, Strings): ")
+print ("What do you want to do understand or do? (General Terms, Strings, Exerises): ")
 level = input()
 level = level.lower()
 
-if str(level) == "general term":
+if str(level) == "general terms":
     gen_terms()
 if str(level) == "strings":
     strings()
+if str(level) == "exerises":
+    exerises()
